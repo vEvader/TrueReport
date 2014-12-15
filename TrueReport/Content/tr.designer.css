@@ -1,0 +1,104 @@
+﻿body {
+  padding-top: 60px;
+  margin: 0;
+}
+
+.col-lg-drag-zone {
+  width: 595px;
+  height:842px;
+  position: relative;
+  min-height: 1px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.drag-zone {
+  width: 595px;
+  height:842px;
+  background-color: #eeeeee;
+  
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
+.element {
+}
+
+.labelElement  {
+    width: 25%;
+    height: 100%;
+    
+    background: transparent;
+    color: black;
+    
+    border: 0.1em solid #666666;
+    border-style: dashed;
+    
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    padding-left: 0.5em;
+}
+.editElement  {
+    width: 25%;
+    height: 100%;
+    
+    background-color: white;
+    color: #666666;
+    
+    border: 0.1em solid  #666666;
+    
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+
+    padding-left: 0.5em;
+}
+
+.selectedLabelElement {
+    border: 0.2em dashed #0000cd;
+}
+
+.selectedEditElement {
+    border: 0.2em solid #0000cd;
+}
+
+.navbar-static-top {
+  margin-bottom:20px;
+}
+
+i {
+  font-size:16px;
+}
+
+.nav > li > a {
+  color:#787878;
+}
+  
+footer {
+  margin-top:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#efefef;
+}
+
+/* count indicator near icons */
+.nav>li .count {
+  position: absolute;
+  bottom: 12px;
+  right: 6px;
+  font-size: 9px;
+  background: rgba(51,200,51,0.55);
+  color: rgba(255,255,255,0.9);
+  line-height: 1em;
+  padding: 2px 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* indent 2nd level */
+.list-unstyled li > ul > li {
+   margin-left:10px;
+   padding:8px;
+}

@@ -1,0 +1,145 @@
+﻿<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">@Resources.MainResource.TrueReportTitle</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">@Resources.DesignerResource.TemplateMenu<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" data-bind="click: loadTemplate"><i class="fa fa-folder-open fa-fw"></i> @Resources.DesignerResource.OpenTemplateMenuItem</a></li>
+                    <li><a href="#" data-bind="click: saveTemplate"><i class="fa fa-save fa-fw"></i> @Resources.DesignerResource.SaveTemplateMenuItem</a></li>
+                    <li><a href="#" data-bind="click: loadDemoTemplate"><i class="fa fa-folder-open-o fa-fw"></i> @Resources.DesignerResource.OpenDemoTemplateMenuItem</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><i class="fa fa-download fa-fw"></i> @Resources.DesignerResource.ImportTemplateMenuItem</a></li>
+                    <li class="disabled"><a href="#"><i class="fa fa-upload fa-fw"></i> @Resources.DesignerResource.ExportTemplateMenuItem</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><i class="fa fa-hdd-o fa-fw"></i> @Resources.DesignerResource.SelectDataSourceMenuItem</a></li>
+                    <li><a href="#" data-bind="click: printReport, enable: elements().length > 0 "><i class="fa fa-print fa-fw"></i> @Resources.DesignerResource.PrintReportMenuItem</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><i class="fa fa-list-alt fa-fw"></i> @Resources.DesignerResource.LayoutSettingsMenuItem</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">@Resources.DesignerResource.EditMenu<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#"><i class="fa fa-undo fa-fw"></i> @Resources.DesignerResource.UndoMenuItem</a></li>
+                    <li><a href="#"><i class="fa fa-repeat fa-fw"></i> @Resources.DesignerResource.RedoMenuItem</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#" data-bind="click: removeElement, enable: selectedElement() != null  "><i class="fa fa-remove fa-fw"></i> @Resources.DesignerResource.DeleteElementMenuItem</a></li>
+                    <li><a href="#" data-bind="click: removeAllElements, enable: elements().length > 0 "><i class="fa fa-file-o fa-fw"></i> @Resources.DesignerResource.ClearMenuItem</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <button class="btn btn-default navbar-btn" disabled><i class="fa fa-undo fa-fw"></i></button>
+        <button class="btn btn-default navbar-btn" disabled><i class="fa fa-repeat fa-fw"></i></button>
+        <button class="btn btn-default navbar-btn" data-bind="click: removeElement, enable: selectedElement() != null  "><i class="fa fa-remove fa-fw"></i></button>
+        <button class="btn btn-default navbar-btn" data-bind="click: removeAllElements, enable: elements().length > 0 "><i class="fa fa-file-o fa-fw"></i></button>
+        <button class="btn btn-default navbar-btn" data-bind="click: printReport, enable: elements().length > 0 "><i class="fa fa-print fa-fw"></i></button>
+
+
+        <button type="button" class="btn btn-default navbar-btn navbar-right" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-info-sign"></i></button>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="disabled"><a href="#"><i class="fa fa-user fa-fw"></i> @Resources.DesignerResource.UserProfileMenuItem</a></li>
+                    <li class="disabled"><a href="#"><i class="fa fa-gear fa-fw"></i> @Resources.DesignerResource.SettingsMenuItem</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="#"><i class="fa fa-sign-out fa-fw"></i> @Resources.DesignerResource.LogoutMenuItem</a></li>
+                </ul>
+            </li>
+        </ul>
+</div><!-- /.navbar-collapse -->
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#formControls">
+                        <i class="fa fa-edit fa-fw"></i> @Resources.DesignerResource.FormControlsGroupText <i class="glyphicon glyphicon-chevron-down"></i>
+                    </a>
+                    <ul class="list-unstyled collapse in" id="formControls">
+                        <li><a href="#" data-bind="click: addLabel">@Resources.DesignerResource.LabelText</a></li>
+                        <li><a href="#" data-bind="click: addEdit">@Resources.DesignerResource.EditText</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#graphicElements">
+                        <i class="fa fa-paint-brush fa-fw"></i> @Resources.DesignerResource.GraphicElementsGoupText <i class="glyphicon glyphicon-chevron-down"></i>
+                    </a>
+                    <ul class="list-unstyled collapse in" id="graphicElements" >
+                        <li>@Resources.DesignerResource.LineText</li>
+                        <li>@Resources.DesignerResource.CircleText</li>
+                        <li>@Resources.DesignerResource.RectangleText</li>
+                    </ul>
+                </li>
+            </ul>
+            <hr/>
+            <h5>Section is only for demonstration of datasource value</h5>
+            <div data-bind="foreach: dataSourceList">
+                <div><input type="radio" name="dataSourceGroup" data-bind="checked: $parent.dataSourceName, value:name" /> <label data-bind="text: name"/></div>
+            </div>
+            <textarea class="form-control disabled" rows="20" data-bind="value: selectedDataSource" disabled></textarea>
+
+               
+        </div>
+        <div class="col-lg-7 col-lg-drag-zone">
+            <div class="drag-zone" data-bind="foreach: elements">
+                <div class="element" data-bind="style:{left:x()+'px', top:y()+'px', width:width() + 'px', height:height() + 'px', position:'absolute'}, attr:{'data-index':id, 'id':id, 'class': classType }, text:name, click: $parent.selectElement"></div>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div data-bind="with: selectedElement">
+                ID: <label data-bind="text: id"></label><br>
+                <hr/>
+                X: <label data-bind="text: x()"></label><br>
+                Y: <label data-bind="text: y()"></label><br>
+                <hr />
+                Width: <label data-bind="text: width"></label><br>
+                Height: <label data-bind="text: height"></label><br>
+                <hr />
+                Name: <label data-bind="text: name"></label><br>
+                Type: <label data-bind="text: type"></label><br>
+                <hr />
+                Bind Value: <input type="text" data-bind="value: bindValue, valueUpdate : 'afterkeydown'"><br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Help</h4>
+            </div>
+            <div class="modal-body">
+                <h2>Please try this flow:</h2>
+                <ul>
+                    <li> Press Template -> <i class="fa fa-folder-open-o fa-fw"></i> Open Demo Template </li>
+                    <li> Move or resize some elements </li>
+                    <li> Press <i class="fa fa-print fa-fw"></i> Print Report Button </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts
+{
+    <script type="text/javascript" src="~/Scripts/app/tr.designer.js"></script>
+}
+

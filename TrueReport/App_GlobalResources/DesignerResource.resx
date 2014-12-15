@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="beforeLoadTemplateQuestion" xml:space="preserve">
+    <value>Current template will be lost. Are you sure?</value>
+  </data>
+  <data name="beforeSaveTemplateQuestion" xml:space="preserve">
+    <value>Saved Template will be overloaded.Are you sure?</value>
+  </data>
+  <data name="BindValueText" xml:space="preserve">
+    <value>Bind Value</value>
+  </data>
+  <data name="CircleText" xml:space="preserve">
+    <value>Circle</value>
+  </data>
+  <data name="ClearMenuItem" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="DeleteElementMenuItem" xml:space="preserve">
+    <value>Delete element</value>
+  </data>
+  <data name="EditMenu" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="ExportTemplateMenuItem" xml:space="preserve">
+    <value>Export Template</value>
+  </data>
+  <data name="FormControlsGroupText" xml:space="preserve">
+    <value>Form Controls</value>
+  </data>
+  <data name="GraphicElementsGoupText" xml:space="preserve">
+    <value>Graphic Elements</value>
+  </data>
+  <data name="HeightText" xml:space="preserve">
+    <value>Height</value>
+  </data>
+  <data name="IdText" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="ImportTemplateMenuItem" xml:space="preserve">
+    <value>Import Template</value>
+  </data>
+  <data name="LabelText" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="LayoutSettingsMenuItem" xml:space="preserve">
+    <value>Layout Settings</value>
+  </data>
+  <data name="LineText" xml:space="preserve">
+    <value>Line</value>
+  </data>
+  <data name="LogoutMenuItem" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="NameText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="OpenDemoTemplateMenuItem" xml:space="preserve">
+    <value>Open Demo Template</value>
+  </data>
+  <data name="OpenTemplateMenuItem" xml:space="preserve">
+    <value>Open Template</value>
+  </data>
+  <data name="PrintReportMenuItem" xml:space="preserve">
+    <value>Print Report</value>
+  </data>
+  <data name="RectangleText" xml:space="preserve">
+    <value>Rectangle</value>
+  </data>
+  <data name="RedoMenuItem" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="reportIsEmptyMessage" xml:space="preserve">
+    <value>Report is Empty</value>
+  </data>
+  <data name="SaveTemplateMenuItem" xml:space="preserve">
+    <value>Save Template</value>
+  </data>
+  <data name="SelectDataSourceMenuItem" xml:space="preserve">
+    <value>Select Data Source</value>
+  </data>
+  <data name="SettingsMenuItem" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="TemplateMenu" xml:space="preserve">
+    <value>Template</value>
+  </data>
+  <data name="TypeText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="UndoMenuItem" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="UserProfileMenuItem" xml:space="preserve">
+    <value>User Profile</value>
+  </data>
+  <data name="WidthText" xml:space="preserve">
+    <value>Width</value>
+  </data>
+  <data name="XText" xml:space="preserve">
+    <value>X</value>
+  </data>
+  <data name="YText" xml:space="preserve">
+    <value>Y</value>
+  </data>
+</root>
